@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fate-O-Matic 3000</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Caveat:wght@700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="bg-layer"></div>
+    <div class="bg-layer2"></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div id="floating-words"></div>
+
+    <div class="floating-text-container">
+        <p class="floating-text">Making life-altering decisions since 2025…</p>
+    </div>
+
+    <div class="card hidden" id="decision-card">
+        <h1 class="page-title">The Fate-O-Matic 3000</h1>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Ask your question..." autocomplete="off" />
+            <button id="decision-button">Decide!</button>
+        </div>
+    </div>
+
+    <audio id="drumroll-audio" src="assets/sounds/drumroll.mp3"></audio>
+    <audio id="reveal-audio" src="assets/sounds/reveal.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
